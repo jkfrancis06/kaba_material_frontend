@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <style>
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+        main {
+            flex: 1 0 auto;
+        }
+        @media only screen and (min-width: 993px)
+        nav a.button-collapse {
+            display: none;
+        }
+        .brand-logo{
+            margin-left: 1%;
+        }
+            img.logo {
+                margin-top: 5%;
+                width: auto;
+                height:54px;
+                display: inline-block;
+            }
+            a.text-logo {
+                height: 20%;
+                font-size: 2em;
+            }
+    </style>
+</head>
+
+<body>
+
+    <!-- / NavBar and SideNav -->
+
+    <ul id="slide-out" class="side-nav">
+        <li><div class="user-view">
+            <div class="background">
+                <img src="img/office.jpg">
+            </div>
+            <a href="#!user"><img class="circle" src="img/kaba_resto_default.jpg"></a>
+            <a href="#!name"><span class="white-text name">KASTAS</span></a>
+            <a href="#!email"><span class="white-text email">Best of Fast Food</span></a>
+        </div></li>
+        <li><a href="#!"><i class="material-icons">cloud</i>Tableau de Bord</a></li>
+        <li><div class="divider"></div></li>
+        <li><a href="#!"><i class="material-icons">person</i>Mes Infos</a></li>
+        <li><div class="divider"></div></li>
+        <li><a href="#!"><i class="material-icons">shopping_cart</i>Mes Commandes</a></li>
+        <li><div class="divider"></div></li>
+        <li><a href="#!"><i class="material-icons">room_service</i>Gestion de menus</a></li>
+
+
+        <!-- Fixed bottom div -->
+
+        <li><div class="divider"></div></li>
+        <li><a href="#!"><i class="material-icons">exit_to_app</i>Deconnexion</a></li>
+
+        <!-- / Fixed bottom div -->
+    </ul>
+
+    <header>
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper">
+                    <a class="text-logo">Kaba</a>
+                    <a class="brand-logo" href="#">
+                        <img src="img/kaba_resto_default.jpg" class="logo">
+                    </a>
+                    <ul class="left">
+                        <li><a data-activates="slide-out" class="my-btn" href="#"><i class="material-icons">menu</i></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- / NavBar and SideNav -->
+
+
+    <main>
+
+    </main>
+
+
+    <!-- Footer -->
+
+    <footer class="page-footer">
+        <div class="footer-copyright">
+            <div class="container">
+                Copyright © 2016-2017 Kaba. Tous droits Reservés.
+                <a class="grey-text text-lighten-4 right" href="#!">A Propos de Nous</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- / Footer -->
+
+
+
+<!--JavaScript at end of body for optimized loading-->
+
+
+<script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous">
+
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script><script type="application/javascript">
+        (function($){
+            $(function(){
+
+                $('.my-btn').sideNav({
+                        edge: 'left', // Choose the horizontal origin
+                        closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+                        draggable: true // Choose whether you can drag to open on touch screens
+                    }
+                );
+
+            }); // end of document ready
+        })(jQuery); // end of jQuery name space
+</script>
+</body>
+</html>
